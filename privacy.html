@@ -1,15 +1,36 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AutoClip Privacy Policy</title><style>body{font:16px/1.6 system-ui,sans-serif;max-width:680px;margin:40px auto;padding:0 16px;color:#222}</style></head>
-<body><h1>AutoClip Privacy Policy</h1><p>Last updated: November 19, 2026</p>
-<h2>What AutoClip accesses</h2>
-<p>AutoClip asks for one Google permission: <code>youtube.upload</code>, which lets it upload videos to the YouTube channel of the person who signs in. It does not read, change or delete any other YouTube or Google account data.</p>
-<h2>How data is stored</h2>
-<p>The sign-in token is stored only on the owner's own computer. AutoClip has no server and does not send Google user data to anyone other than Google's own YouTube API.</p>
+<title>AutoClip Privacy Policy</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;color:#222;background:#fff}nav a{margin-right:16px}</style></head>
+<body>
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+<h1>AutoClip Privacy Policy</h1>
+<p>Last updated: November 19, 2026</p>
+
+<h2>YouTube API Services</h2>
+<p>AutoClip uses YouTube API Services to upload videos to YouTube. By using AutoClip you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of data is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>What information AutoClip accesses</h2>
+<p>AutoClip asks for one Google permission, <code>https://www.googleapis.com/auth/youtube.upload</code>, which lets it upload videos to the YouTube channel of the person who signs in. Through YouTube API Services, AutoClip only sends video files and their title, description and privacy setting, and receives the new video's ID. It does not read, collect or store any other YouTube or Google account data, viewer data, comments or analytics.</p>
+
+<h2>How information is used</h2>
+<p>The sign-in is used only to upload clips that the operator made to the operator's own channel.</p>
+
+<h2>How information is stored</h2>
+<p>The OAuth token is stored only in a file on the operator's own computer. AutoClip has no server, no database and no cloud storage, and stores no data from YouTube API Services beyond the IDs of videos it uploaded (kept in a local log file).</p>
+
 <h2>Sharing</h2>
-<p>Google user data is never sold, shared with third parties, or used for advertising.</p>
-<p>AutoClip's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
-<h2>Removing access</h2>
-<p>You can revoke AutoClip's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and delete the local token file.</p>
+<p>AutoClip does not share, sell or transfer any user data to third parties, and does not use it for advertising. The only party that receives data is Google, through YouTube API Services.</p>
+
+<h2>Cookies and device data</h2>
+<p>AutoClip does not use cookies and does not store or access information on users' devices other than the local token and log files described above.</p>
+
+<h2>Deleting your data and revoking access</h2>
+<ul>
+<li>Revoke AutoClip's access at any time on the Google security settings page: <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.</li>
+<li>Deleting the local token file removes AutoClip's stored credentials immediately.</li>
+<li>If access is revoked, AutoClip stops all API calls and deletes stored API data within 7 days. Stored API data is also refreshed or deleted at least every 30 days.</li>
+</ul>
+
 <h2>Contact</h2>
-<p>Open an issue at <a href="https://github.com/ujjwal0005/autoclip-privacy/issues">github.com/ujjwal0005/autoclip-privacy</a>.</p>
-<p><a href="index.html">Home</a></p></body></html>
+<p>Questions or deletion requests: open an issue at <a href="https://github.com/ujjwal0005/autoclip-privacy/issues">github.com/ujjwal0005/autoclip-privacy/issues</a>.</p>
+</body></html>

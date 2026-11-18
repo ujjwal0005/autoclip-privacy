@@ -1,6 +1,29 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AutoClip</title><style>body{font:16px/1.6 system-ui,sans-serif;max-width:680px;margin:40px auto;padding:0 16px;color:#222}</style></head>
-<body><h1>AutoClip</h1>
-<p>AutoClip is a personal tool that cuts short vertical highlight clips from long gaming streams and uploads them to the owner's own YouTube channel.</p>
-<p>It is used only by its owner. It does not offer accounts or services to the public.</p>
-<p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></p></body></html>
+<title>AutoClip</title>
+<style>
+body{font:16px/1.6 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;color:#222;background:#fff}
+header{display:flex;align-items:center;gap:12px;border-bottom:1px solid #ddd;padding-bottom:12px}
+header img{width:56px;height:56px;border-radius:50%}
+nav a{margin-right:16px}
+.note{background:#f5f5f5;border-left:4px solid #c00;padding:10px 14px}
+footer{margin-top:40px;border-top:1px solid #ddd;padding-top:12px;font-size:14px}
+</style></head>
+<body>
+<header><img src="logo.png" alt="AutoClip logo"><h1>AutoClip</h1></header>
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+
+<p>AutoClip is a personal tool that turns long recorded gaming live streams into short vertical highlight clips and uploads them to the operator's own YouTube channel, <a href="https://www.youtube.com/@ViceCityClips-2027">ViceCity</a>.</p>
+
+<h2>How it works</h2>
+<ol>
+<li>When a followed streamer's broadcast ends, AutoClip transcribes the recording on the operator's computer and picks the strongest moments.</li>
+<li>It renders each moment as a 1080x1920 clip with captions and a credit to the original streamer.</li>
+<li>It uploads the finished clip to the operator's channel with the YouTube Data API (<code>videos.insert</code>), using the operator's own Google sign-in (OAuth 2.0, scope <code>youtube.upload</code>).</li>
+</ol>
+
+<p class="note"><strong>AutoClip uses YouTube API Services.</strong> By using AutoClip you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and our <a href="privacy.html">Privacy Policy</a>.</p>
+
+<p>AutoClip is not distributed to the public: it runs only on the operator's computer and only uploads to the operator's channel.</p>
+
+<footer><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a></footer>
+</body></html>
